@@ -19,7 +19,7 @@ const Footer = () => {
               className="text-2xl font-display font-bold text-white relative group"
             >
               <span className="inline-block transform transition-transform group-hover:scale-105">
-                David
+                Rahil
                 <span className="text-highlight">.</span>
               </span>
             </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end">
             <SocialIcons className="mb-5" />
             <div className="text-sm text-white/60 flex items-center">
-              <span>&copy; {currentYear} David Johnson. All rights reserved.</span>
+              <span>&copy; {currentYear} Rahil. All rights reserved.</span>
               <span className="inline-flex items-center mx-1.5">
                 <span className="mx-1">Made with</span>
                 <Heart size={14} className="text-highlight fill-highlight mx-0.5" />

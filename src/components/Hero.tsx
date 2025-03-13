@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-white leading-tight animate-slide-in-left" style={{ animationDelay: '0.5s' }}>
-              David Johnson
+              Rahil
             </h1>
             
             <h2 className="text-xl md:text-2xl font-medium mb-6 animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
