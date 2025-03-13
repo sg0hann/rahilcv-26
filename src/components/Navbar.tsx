@@ -65,7 +65,7 @@ const Navbar = () => {
           className="text-2xl font-display font-bold text-white relative group"
         >
           <span className="inline-block transform transition-transform group-hover:scale-105">
-            David
+            Rahil
             <span className="text-highlight">.</span>
           </span>
           <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-highlight transition-all duration-300 group-hover:w-full"></span>
