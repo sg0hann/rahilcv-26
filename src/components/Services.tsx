@@ -29,7 +29,7 @@ const services = [
   {
     icon: Globe,
     title: 'SEO Optimization',
-    description: 'Improving your website's visibility in search engines to drive more organic traffic.'
+    description: "Improving your website's visibility in search engines to drive more organic traffic."
   },
   {
     icon: Zap,
