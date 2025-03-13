@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Twitter, Linkedin, GitHub, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Github, Instagram } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface SocialIconsProps {
@@ -18,7 +18,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({
     { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
     { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: GitHub, href: 'https://github.com', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com', label: 'GitHub' },
     { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' }
   ];
 

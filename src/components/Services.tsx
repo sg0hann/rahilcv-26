@@ -2,9 +2,10 @@
 import React from 'react';
 import { Code, PenTool, Smartphone, Globe, Zap, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
-  icon: React.FC<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   title: string;
   description: string;
   delay?: number;

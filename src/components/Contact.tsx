@@ -6,9 +6,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import SocialIcons from './SocialIcons';
+import { LucideIcon } from 'lucide-react';
 
 interface ContactInfo {
-  icon: React.FC<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   title: string;
   content: string;
   link?: string;
