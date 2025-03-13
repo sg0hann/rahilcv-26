@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -19,14 +18,14 @@ const contactInfo: ContactInfo[] = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'hello@davidjohnson.com',
-    link: 'mailto:hello@davidjohnson.com'
+    content: 'mdrahil00f1@gmail.com',
+    link: 'mailto:mdrahil00f1@gmail.com'
   },
   {
     icon: Phone,
     title: 'Phone',
-    content: '+1 (555) 123-4567',
-    link: 'tel:+15551234567'
+    content: '+91 8527634285',
+    link: 'tel:+918527634285'
   },
   {
     icon: MapPin,
