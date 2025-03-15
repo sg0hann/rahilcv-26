@@ -99,9 +99,9 @@ const Hero = () => {
             <div className="relative perspective w-[280px] h-[280px] md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px]">
               <div className="absolute inset-0 shape-blob bg-highlight animate-glow-pulse flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/b992c4fd-44ad-462e-a639-edd57a4af591.png" 
-                  alt="David Johnson" 
-                  className="w-[95%] h-[95%] object-cover rounded-full" 
+                  src="/lovable-uploads/be45e324-320d-48c7-b399-bb87be73c344.png" 
+                  alt="Rahil" 
+                  className="w-[95%] h-[95%] object-cover rounded-full grayscale contrast-125" 
                 />
               </div>
             </div>
