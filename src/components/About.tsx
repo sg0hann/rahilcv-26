@@ -11,9 +11,6 @@ interface SkillProps {
 const skills = [
   { title: 'Web Design', percentage: 60 },
   { title: 'Graphic Design', percentage: 80 },
-  { title: 'UI/UX Design', percentage: 80 },
-  { title: 'React Development', percentage: 95 },
-  { title: 'TypeScript', percentage: 85 },
   { title: 'Responsive Design', percentage: 75 }
 ];
 
