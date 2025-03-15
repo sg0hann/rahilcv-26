@@ -9,21 +9,14 @@ interface SkillProps {
 }
 
 const skills = [
-  { title: 'Web Design', percentage: 60 },
-  { title: 'Graphic Design', percentage: 80 },
-  { title: 'UI/UX Design', percentage: 80 },
-  { title: 'React Development', percentage: 95 },
-  { title: 'TypeScript', percentage: 85 },
-  { title: 'Responsive Design', percentage: 75 }
+  { title: 'Web Design', percentage: 85 },
+  { title: 'Graphic Design', percentage: 90 },
+  { title: 'Bootstrap', percentage: 95 },
+  { title: 'Package Design', percentage: 88 },
+  { title: 'Responsive Design', percentage: 92 }
 ];
 
 const experienceItems = [
-  {
-    title: 'UI/UX Designer',
-    company: 'Creative Studio',
-    period: '2020 - Present',
-    description: 'Lead UI/UX designer for web and mobile applications, focusing on creating intuitive and engaging user experiences.'
-  },
   {
     title: 'Frontend Developer',
     company: 'Tech Solutions',
