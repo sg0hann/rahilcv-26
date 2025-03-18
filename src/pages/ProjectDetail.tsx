@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, User, Tag } from 'lucide-react';
@@ -39,9 +40,9 @@ const projects = [
     client: 'Organic Food Company',
     date: 'April 2023',
     tags: ['Package Design', 'Branding', 'Print Design', 'Typography'],
-    heroImage: '/lovable-uploads/eb876613-a6ed-4053-8a68-a7315dfab94e.png',
+    heroImage: '/lovable-uploads/b31c5188-6a83-4b9a-810a-e6bdf157fd8c.png',
     gallery: [
-      '/lovable-uploads/eb876613-a6ed-4053-8a68-a7315dfab94e.png',
+      '/lovable-uploads/b31c5188-6a83-4b9a-810a-e6bdf157fd8c.png',
       'https://images.unsplash.com/photo-1607602740045-42a1ba8c0b4b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       'https://images.unsplash.com/photo-1625037032037-2ff2c04c5108?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     ],
@@ -72,6 +73,19 @@ const ProjectDetail = () => {
     
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    
+    // Animate elements on load
+    const animateElements = () => {
+      const elements = document.querySelectorAll('.animate-on-load');
+      elements.forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.add('animate-active');
+        }, index * 100);
+      });
+    };
+    
+    animateElements();
+    
   }, [project, navigate, projectId]);
   
   if (!project) return null;
@@ -87,21 +101,22 @@ const ProjectDetail = () => {
           <img 
             src={project.heroImage} 
             alt={project.title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover animate-scale-in animate-on-load"
           />
           
           <div className="relative z-20 container mx-auto px-6 md:px-10 h-full flex flex-col justify-end pb-10">
             <Button 
               variant="outline" 
               size="sm"
-              className="mb-6 self-start bg-white/5 border-white/10 hover:bg-white/10"
+              className="mb-6 self-start bg-white/5 border-white/10 hover:bg-white/10 animate-fade-in animate-on-load"
               onClick={() => navigate(-1)}
+              style={{ animationDelay: '0.2s' }}
             >
               <ArrowLeft size={16} className="mr-1.5" />
               Back to Projects
             </Button>
             
-            <div className="animate-fade-up">
+            <div className="animate-fade-up animate-on-load" style={{ animationDelay: '0.3s' }}>
               <span className="inline-block py-1 px-2.5 bg-highlight/20 rounded-full text-xs font-medium text-highlight mb-3">
                 {project.category}
               </span>
@@ -114,7 +129,7 @@ const ProjectDetail = () => {
         <section className="py-16 bg-dark">
           <div className="container mx-auto px-6 md:px-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              <div className="md:col-span-2 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+              <div className="md:col-span-2 animate-fade-up animate-on-load" style={{ animationDelay: '0.4s' }}>
                 <h2 className="text-2xl font-bold mb-6">Project Overview</h2>
                 <p className="text-white/80 leading-relaxed mb-8">{project.description}</p>
                 
@@ -136,7 +151,7 @@ const ProjectDetail = () => {
                 </div>
               </div>
               
-              <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
+              <div className="animate-fade-up animate-on-load" style={{ animationDelay: '0.5s' }}>
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 sticky top-24">
                   <h3 className="text-lg font-semibold mb-5">Project Information</h3>
                   
@@ -201,7 +216,7 @@ const ProjectDetail = () => {
               {project.gallery.map((image, index) => (
                 <div 
                   key={index}
-                  className="rounded-xl overflow-hidden aspect-video animate-fade-up"
+                  className="rounded-xl overflow-hidden aspect-video animate-fade-up hover:transform hover:scale-[1.02] transition-all duration-500"
                   style={{ animationDelay: `${index * 0.1 + 0.2}s` }}
                 >
                   <img 
@@ -219,7 +234,7 @@ const ProjectDetail = () => {
         {project.testimonial && (
           <section className="py-16 bg-dark">
             <div className="container mx-auto px-6 md:px-10">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10 relative">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10 relative animate-fade-up">
                 <div className="absolute top-6 left-8 text-highlight/20 text-7xl font-serif">"</div>
                 
                 <div className="relative z-10">
@@ -243,7 +258,7 @@ const ProjectDetail = () => {
         {project.nextProject && (
           <section className="py-16 bg-dark">
             <div className="container mx-auto px-6 md:px-10">
-              <div className="text-center">
+              <div className="text-center animate-fade-up">
                 <span className="text-sm text-white/60 uppercase tracking-wider">Next Project</span>
                 <h2 className="text-2xl md:text-3xl font-bold mt-3 mb-6">Continue Exploring</h2>
                 

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, ExternalLink } from 'lucide-react';
@@ -51,7 +52,7 @@ const projects: Project[] = [
     id: 'project6',
     title: 'Product Packaging',
     category: 'Graphic Design',
-    image: '/lovable-uploads/eb876613-a6ed-4053-8a68-a7315dfab94e.png',
+    image: '/lovable-uploads/b31c5188-6a83-4b9a-810a-e6bdf157fd8c.png',
     link: '/projects/product-packaging'
   }
 ];
@@ -75,13 +76,13 @@ const Portfolio = () => {
           <div className="inline-flex items-center justify-center py-1 px-3 rounded-full bg-white/5 border border-white/10 mb-4 backdrop-blur-sm">
             <span className="text-xs font-medium text-white/70">My Work</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Recent Projects</h2>
-          <p className="text-white/70 leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-up">Recent Projects</h2>
+          <p className="text-white/70 leading-relaxed animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Explore my recent design and development projects. Each project represents my dedication to creating visually appealing and functional digital experiences.
           </p>
         </div>
         
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-fade-up" style={{ animationDelay: '0.2s' }}>
           {categories.map((category, index) => (
             <button
               key={index}
@@ -98,12 +99,13 @@ const Portfolio = () => {
           ))}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {filteredProjects.map((project) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {filteredProjects.map((project, index) => (
             <Link
               key={project.id}
               to={project.link}
-              className="group relative rounded-xl overflow-hidden bg-white/5 border border-white/10 aspect-[3/4] md:aspect-[4/5] transition-all duration-500"
+              className="group relative rounded-xl overflow-hidden bg-white/5 border border-white/10 aspect-[3/4] md:aspect-[4/5] transition-all duration-500 animate-fade-up"
+              style={{ animationDelay: `${index * 0.1 + 0.3}s` }}
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -138,7 +140,7 @@ const Portfolio = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.6s' }}>
           <Link 
             to="/projects" 
             className="inline-flex items-center py-2.5 px-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm text-white/90 hover:bg-white/10 transition-all duration-300"
