@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, User, Tag } from 'lucide-react';
@@ -33,7 +32,31 @@ const projects = [
     liveLink: "https://example.com",
     nextProject: "brand-identity"
   },
-  // More projects would be defined here...
+  {
+    id: 'product-packaging',
+    title: 'Product Packaging',
+    category: 'Graphic Design',
+    client: 'Organic Food Company',
+    date: 'April 2023',
+    tags: ['Package Design', 'Branding', 'Print Design', 'Typography'],
+    heroImage: '/lovable-uploads/eb876613-a6ed-4053-8a68-a7315dfab94e.png',
+    gallery: [
+      '/lovable-uploads/eb876613-a6ed-4053-8a68-a7315dfab94e.png',
+      'https://images.unsplash.com/photo-1607602740045-42a1ba8c0b4b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1625037032037-2ff2c04c5108?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    ],
+    description: "This product packaging design was created for an organic food company looking to showcase their premium chocolate products. The design features elegant typography, distinctive branding elements, and a rich color palette that reflects the premium nature of the product.",
+    challenge: "The client needed packaging that would stand out on shelves, communicate the premium quality of their chocolate, and align with their organic and eco-friendly brand values. The design needed to work across various product sizes while maintaining brand consistency.",
+    solution: "I created a distinctive design with a rich brown background and gold accents to communicate premium quality. The packaging features custom illustrations and a clean layout that highlights the product's natural ingredients. The design was optimized for various product sizes and printing techniques.",
+    results: "The new packaging design helped increase product visibility and sales by 35%. Customer feedback was overwhelmingly positive, with many noting the distinctive design as a factor in their purchase decision. The design also won a regional packaging design award.",
+    testimonial: {
+      text: "The packaging design created for our chocolate products perfectly captures our brand's essence. The detailed illustrations and elegant color scheme have made our products stand out on shelves and resonate with our target audience.",
+      author: "Nadia Thompson",
+      position: "Marketing Director, Organic Food Company"
+    },
+    liveLink: "https://example.com/packaging-case-study",
+    nextProject: "e-commerce-website"
+  }
 ];
 
 const ProjectDetail = () => {

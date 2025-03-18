@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, ExternalLink } from 'lucide-react';
@@ -52,7 +51,7 @@ const projects: Project[] = [
     id: 'project6',
     title: 'Product Packaging',
     category: 'Graphic Design',
-    image: 'https://images.unsplash.com/photo-1625037032037-2ff2c04c5108?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: '/lovable-uploads/eb876613-a6ed-4053-8a68-a7315dfab94e.png',
     link: '/projects/product-packaging'
   }
 ];
